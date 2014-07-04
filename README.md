@@ -1,17 +1,14 @@
 SuoSuo
 ===========
-
 基于tornado、redis和bootstrap的一个聊天室。
 
 简介
 ===========
-
 利用长轮询和redis的PUB/SUB实现了多人实时通信。
 这个版本只实现了几个最基本的功能。
 
 所需
 ===========
-
  * [tornado](https://github.com/tornadoweb/tornado)
  * [tornado-redis](https://github.com/leporo/tornado-redis)
  * [wtforms](https://github.com/wtforms/wtforms)
@@ -19,7 +16,6 @@ SuoSuo
 
 功能
 ===========
-
 已实现功能：
 1. 用户注册、登陆和登出；
 2. 频道的创建和订阅；
