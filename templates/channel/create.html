@@ -1,0 +1,22 @@
+{% extends "../_layout.html" %}
+{% block title %}创建频道 - 说说{% end %}
+
+{% block head %}
+<link href="{{ static_url('css/signin.css') }}" rel="stylesheet">
+{% end %}
+
+{% block content %}
+<form method="POST" class="form-signin" role="form">
+  {% module xsrf_form_html() %}
+  {% if 'invalid' in form.errors%}
+  <h2 class="form-signin-heading">{{ _("该频道已存在") }}</h2>
+  {% else %}
+  <h2 class="form-signin-heading">{{ _("请输入频道名") }}</h2>
+  {% end %}
+  {% if form.cname.errors %}
+  <span style="color:#FF0000">{{ form.cname.errors[0] }}</span>
+  {% end %}
+  <input id="cname" name="cname" type="text" class="form-control" placeholder="{{ _("频道名") }}" {% if form.cname.data %}value="{{ form.cname.data }}"{% end %}>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">{{ _("确定") }}</button>
+</form>
+{% end %}

@@ -1,0 +1,15 @@
+.form-chat {
+  /*width: 85%;*/
+  /*height: 30%;*/
+  padding-top: 25px;
+  /*margin: 0 auto;*/
+}
+.list-group {
+  margin-top: 10px;
+}
+#display {
+  margin-top: 10px;
+  cursor: text;
+  /*width: 85%;*/
+  /*height: 60%;*/
+}

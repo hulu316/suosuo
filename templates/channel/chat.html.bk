@@ -1,0 +1,23 @@
+{% extends "_layout.html" %}
+{% block title %}频道 - 说说{% end %}
+
+{% block head %}
+<link href="{{ static_url('css/channel.css') }}" rel="stylesheet">
+{% end %}
+
+{% block scripts %}
+  <script src="{{ static_url('js/chat.js') }}"></script>
+{% end %}
+
+{% block content %}
+<div align="center">
+  <textarea id="display" class="form-control" rows="15" readonly="readonly"></textarea>
+</div>
+<form method="POST" class="form-chat" role="form">
+  {% module xsrf_form_html() %}
+  <div class="form-group">
+    <textarea id="input" name="input" class="form-control" rows="4"></textarea>
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">{{ _("发送") }}</button>
+</form>
+{% end %}
