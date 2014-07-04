@@ -14,15 +14,15 @@ SuoSuo
  * [wtforms](https://github.com/wtforms/wtforms)
  * [wtforms-tornado](https://github.com/puentesarrin/wtforms-tornado)
 
-功能
+已实现功能
 ===========
-已实现功能：
 1. 用户注册、登陆和登出；
 2. 频道的创建和订阅；
 3. 频道未读信息的实时提醒；
 4. 文字聊天；
 
-待实现功能：
+待实现功能
+===========
 1. 用户邮箱验证；
 2. 频道的修改和删除；
 3. 所有频道的按序展示；
